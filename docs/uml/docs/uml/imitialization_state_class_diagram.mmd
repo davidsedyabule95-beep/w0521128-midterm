@@ -1,0 +1,28 @@
+```mermaid
+classDiagram
+
+class GameLevel {
+  -levelNumber : int
+  -isGameOver : bool
+  +startLevel()
+  +checkWinCondition()
+  +checkLoseCondition()
+}
+
+class Maze {
+  -walls : int
+  +isMoveValid()
+}
+
+class Tank {
+  -x : int
+  -y : int
+  -direction : String
+  +move()
+  +shoot()
+}
+
+GameLevel *-- Maze
+GameLevel *-- Tank
+Maze --> Tank
+```
