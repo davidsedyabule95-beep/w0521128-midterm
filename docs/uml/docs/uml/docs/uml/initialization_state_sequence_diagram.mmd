@@ -1,0 +1,6 @@
+sequenceDiagram
+GameController->>Player: create()
+GameController->>Maze: loadMaze()
+GameController->>Enemy: spawnEnemies()
+GameController->>ScoreSystem: initializeScore()
+Player->>Maze: enterMaze()
